@@ -59,6 +59,19 @@ li:hover, li:focus {
         padding-bottom: 5px;
     }
 }
+@media (max-width: 506px) {
+    header {
+        flex-direction: column;
+        height: 150px;
+    }
+    li  {
+        font-size: 20px;
+
+    }
+    nav {
+        float: right;
+    }
+}
 
 .about {
     width: 100%;
@@ -73,7 +86,7 @@ li:hover, li:focus {
 
 .main {
     width: 40%;
-    color: ;
+    color: white;
     z-index: 1111;
     font-size: 150%;
 }
@@ -101,6 +114,25 @@ aside img {
     }
     span {
         display: none;
+    }
+    nav {
+        margin-left: 10vh;
+    }
+}
+@media (max-width: 760px) {
+    span {
+        display: none;
+    }
+    aside {
+        width: 100%;
+    }
+    .about {
+        flex-direction: column;
+        height: 100vh;
+    }
+    .main {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 
@@ -147,6 +179,18 @@ h2, p {
     }
 }
 
+@media (max-width: 760px){
+    .members {
+    grid-template-columns: repeat(1, 1fr);
+    height: 510vh;
+    }
+    .v, .junguk, .park, .suga, .jin, .rm, .jHop {
+        width: 100%;
+    }
+    .v div, .junguk div, .park div, .suga div, .jin div, .rm div, .jHop div {
+        width: 100%;
+    }
+}
 
 .songs {
     width: 100%;
@@ -192,5 +236,30 @@ h2, p {
     }
     iframe {
         width: 100%;
+    }
+}
+
+@media (max-width: 1220px) {
+    .one, .two {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .one {
+        margin-bottom: 50vh;
+        margin-top: 20vh;
+    }
+    .songs {
+        height: 210vh;
+    }
+    iframe {
+        width: 700px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    iframe {
+        width: 500px;
     }
 }
