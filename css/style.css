@@ -1,0 +1,196 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+}
+
+nav {
+    float: right;
+    width: 100%;
+}
+
+nav  ul {
+    display: flex;
+    float: right;
+}
+
+li {
+    color: white;
+    font-size: 30px;
+    margin-right: 50px;
+}
+
+li:hover, li:focus {
+    color: blue;
+    font-size: 40px;
+    cursor: pointer;
+
+}
+
+@media (max-width: 326px){
+    header {
+        flex-direction: column;
+        height: 130px;
+    }
+    li {
+        font-size: 15px;
+    }
+    nav {
+        padding-bottom: 5px;
+    }
+}
+
+.about {
+    width: 100%;
+    height: 80vh;
+    border-bottom: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: blue;
+}
+
+.main {
+    width: 40%;
+    color: ;
+    z-index: 1111;
+    font-size: 150%;
+}
+
+aside {
+    width: 40%;
+    height: 50vh;
+}
+
+aside img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 326px) {
+    .about {
+        height: 90vh;
+        flex-direction: column;
+    }
+    .main {
+        width: 100%;
+    }
+    aside {
+        width: 100%;
+    }
+    span {
+        display: none;
+    }
+}
+
+.members {
+    width: 100%;
+    height: 150vh;
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.members div {
+    width: 40vh;
+    height: 70vh;
+    background-color: black;
+    margin-top: 20px;
+}
+
+h2, p {
+    color: white;
+}
+
+.v div, .junguk div, .park div, .suga div, .jin div, .rm div, .jHop div  {
+    width: 100%;
+    height: 50vh;
+    background-color: brown;
+    margin: 0;
+}
+
+.v h2, .junguk h2, .park h2, .suga h2, .jin h2, .rm h2, .jHop h2 {
+    text-align: center;
+}
+
+.v div img, .junguk div img, .park img, .suga img, .jin img, .rm img, .jHop img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+@media (max-width: 326px) {
+    .members {
+        grid-template-columns: repeat(1, 1fr);
+        height: 460vh;
+    }
+}
+
+
+.songs {
+    width: 100%;
+    height: 120vh;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+
+
+.one, .two {
+    display: flex;
+    width: 100%;
+    height: 55vh;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .iframeone, .iframetwo {
+    width: 50%;
+    height: 40vh;
+    background-color: black;
+} */
+
+.iframone {
+    margin-right: 100px;
+}
+
+
+@media (max-width: 326px) {
+    .one, .two {
+        flex-direction: column;
+    }
+    .one {
+        margin-bottom: 22vh;
+        margin-top: 20vh;
+    }
+    .iframone {
+        margin: 0%;
+    }
+    iframe {
+        width: 100%;
+    }
+}
